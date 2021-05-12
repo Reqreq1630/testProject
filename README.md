@@ -95,7 +95,7 @@ void CScene::SpriteRender()
 #### Actor
 <code>SourceCode\Object\GameObject\Actor</code>以下の階層にそれぞれ追加したいオブジェクトクラスのクラスを作成する  
 その際、<code>CActor</code>クラスを継承させる  
-※以下のソースコード参照  
+※以下 ソースコード参照  
 
 <details>
 
