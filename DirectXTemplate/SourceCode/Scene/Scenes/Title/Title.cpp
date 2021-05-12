@@ -34,7 +34,6 @@ bool CTitle::Load()
 	m_pStaticMesh = CMeshResorce::GetStatic("stage");
 	m_Sprite = CSpriteResource::GetSprite("pokemon");
 	m_effect1.SetEffect("uvtest");
-	m_effect2.SetEffect("uvtest");
 	return true;
 }
 
@@ -63,12 +62,10 @@ void CTitle::Update()
 	if( CKeyInput::IsPress('L') == true ) pos2.y -= 0.01f;
 	if( CKeyInput::IsPress('U') == true ) pos2.z += 0.01f;
 	if( CKeyInput::IsPress('O') == true ){
-		m_effect2.Stop();
 		pos2.z -= 0.01f;
 	}
 	
 	if( CKeyInput::IsPress('H') == true ){
-		m_effect2.Play( {  0.0f, 0.0f, 0.0f } );
 		rot += 0.01f;
 	}
 	if( CKeyInput::IsPress('N') == true ){
@@ -97,9 +94,6 @@ void CTitle::Update()
 	CCollisionRender::PushSphere( &s2 );
 	CCollisionRender::PushSphere( &sphere );
 
-	CDebugText::PushText( "vec X : ", m_effect2.GetTotalInstanceCount() );
-	CDebugText::PushText( "vec Y : ", m_effect1.GetTotalInstanceCount() );
-	CDebugText::PushText( "vec Z : ", vec.z );
 	if( CKeyInput::IsMomentPress('G') == true ){
 		SetSceneChange();
 	}
@@ -118,7 +112,6 @@ void CTitle::ModelRender()
 	s.Color = { 1.0f, 1.0f, 1.0f, 1.0f };
 	m_Sprite->Render3D( false, &s );
 
-	m_effect2.Render();
 }
 
 //============================.
