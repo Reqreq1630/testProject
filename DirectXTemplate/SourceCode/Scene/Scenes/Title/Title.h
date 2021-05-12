@@ -30,7 +30,6 @@ private:
 	CDX9SkinMesh*	m_pSkinMesh;
 	CDX9StaticMesh*	m_pStaticMesh;
 	CSprite*	m_Sprite;
-	CEffectManager m_effect1;
 };
 
 #endif	// #ifndef TITLE_H.

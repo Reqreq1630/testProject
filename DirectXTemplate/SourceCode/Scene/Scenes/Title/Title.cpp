@@ -33,7 +33,6 @@ bool CTitle::Load()
 	m_pSkinMesh = CMeshResorce::GetSkin("kaito_s");
 	m_pStaticMesh = CMeshResorce::GetStatic("stage");
 	m_Sprite = CSpriteResource::GetSprite("pokemon");
-	m_effect1.SetEffect("uvtest");
 	return true;
 }
 
@@ -70,7 +69,6 @@ void CTitle::Update()
 	}
 	if( CKeyInput::IsPress('N') == true ){
 		rot_y += 0.01f;
-		m_effect1.Play( {  0.0f, 10.0f, 0.0f  } );
 	}
 
 	static CSphere sphere, s1, s2;
