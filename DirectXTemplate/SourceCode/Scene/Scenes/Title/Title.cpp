@@ -119,7 +119,6 @@ void CTitle::ModelRender()
 	m_Sprite->Render3D( false, &s );
 
 	m_effect2.Render();
-	m_effect1.Render();
 }
 
 //============================.
