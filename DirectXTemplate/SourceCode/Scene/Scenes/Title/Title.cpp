@@ -127,6 +127,5 @@ void CTitle::ModelRender()
 //============================.
 void CTitle::SpriteRender()
 {
-	m_Sprite->Render();
 }
 
