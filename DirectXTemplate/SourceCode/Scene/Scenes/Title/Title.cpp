@@ -107,7 +107,6 @@ void CTitle::ModelRender()
 
 	SSpriteRenderState s = m_Sprite->GetRenderState();
 	s.Tranceform.Scale = { 3.0f, 3.0f, 3.0f };
-	s.Color = { 1.0f, 1.0f, 1.0f, 1.0f };
 	m_Sprite->Render3D( false, &s );
 
 }
