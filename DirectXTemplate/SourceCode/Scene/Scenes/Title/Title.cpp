@@ -87,10 +87,6 @@ void CTitle::Update()
 	bool isHit = coll::IsRayToSphere( &ray, &sphere, &p, &p2 );
 	s1.SetPosition( p );
 	s2.SetPosition( p2 );
-	CCollisionRender::PushRay( &ray );
-	CCollisionRender::PushSphere( &s1 );
-	CCollisionRender::PushSphere( &s2 );
-	CCollisionRender::PushSphere( &sphere );
 
 	if( CKeyInput::IsMomentPress('G') == true ){
 		SetSceneChange();
