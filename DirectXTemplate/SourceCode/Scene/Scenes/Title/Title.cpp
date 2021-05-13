@@ -71,6 +71,7 @@ void CTitle::Update()
 		rot_y += 0.01f;
 	}
 
+	//í«â¡ÉRÉÅÉìÉg
 	static CSphere sphere, s1, s2;
 	static CRay ray;
 	D3DXVECTOR3 vec;
@@ -87,10 +88,6 @@ void CTitle::Update()
 	bool isHit = coll::IsRayToSphere( &ray, &sphere, &p, &p2 );
 	s1.SetPosition( p );
 	s2.SetPosition( p2 );
-	CCollisionRender::PushRay( &ray );
-	CCollisionRender::PushSphere( &s1 );
-	CCollisionRender::PushSphere( &s2 );
-	CCollisionRender::PushSphere( &sphere );
 
 	if( CKeyInput::IsMomentPress('G') == true ){
 		SetSceneChange();
