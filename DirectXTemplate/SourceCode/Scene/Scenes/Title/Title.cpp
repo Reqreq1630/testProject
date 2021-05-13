@@ -67,10 +67,11 @@ void CTitle::Update()
 	if( CKeyInput::IsPress('H') == true ){
 		rot += 0.01f;
 	}
-	if( CKeyInput::IsPress('N') == true ){
+	if( CKeyInput::IsPress('M') == true ){
 		rot_y += 0.01f;
 	}
 
+	//í«â¡ÉRÉÅÉìÉg
 	static CSphere sphere, s1, s2;
 	static CRay ray;
 	D3DXVECTOR3 vec;
