@@ -71,6 +71,7 @@ void CTitle::Update()
 		rot_y += 0.01f;
 	}
 
+	//’Ç‰ÁƒRƒƒ“ƒg
 	static CSphere sphere, s1, s2;
 	static CRay ray;
 	D3DXVECTOR3 vec;
